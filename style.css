@@ -244,15 +244,20 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.section6 {background-color: #5d4312;}
+.section6 {background-color: #5d4312; padding-top: 20px;}
 .section6 h1 {color: #fff;}
-.section6 .telefone {
+.section6 .contatos {
     display: flex;
     justify-content:left;
     width: 300px;
     align-items: center;
+    margin-top: 20px;
 }
-.section6 .telefone img {width: 30px; margin-right: 5px;}
+.section6 .contatos a {display: flex; align-items: center; flex-direction: row; color: #cfb277; transition: .2s;}
+.section6 .contatos a:hover {color: #fff;}
+.section6 .contatos img {width: 30px; margin-right: 5px;}
+.section6 .facebook img {width: 45px; margin-right: -2px; margin-left: -8px;}
+
 
 .developedBy {
     background-color: #442f06;
