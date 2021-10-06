@@ -83,3 +83,15 @@ menuMobileButton.addEventListener('click', function() {
         mobileButtonReturn.style.display = 'none';
     });
 });
+
+const linksMenuMobile = document.querySelectorAll('.menu_celular ul li a');
+linksMenuMobile.forEach(link => {
+    link.addEventListener('click', function(){
+        const menuMobile = document.querySelector('.menu_celular ul');
+        const mobileButtonReturn = document.querySelector('.menu_celular_cancelar');
+
+        menuMobile.style.animation = 'slideMenuReturn .5s';
+        menuMobile.style.animationFillMode = "forwards";
+        mobileButtonReturn.style.display = 'none';
+    })
+})
