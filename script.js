@@ -95,3 +95,27 @@ linksMenuMobile.forEach(link => {
         mobileButtonReturn.style.display = 'none';
     })
 })
+
+//criando o efeito de trocar as imagens
+let time = 4000,
+    currentImageIndex = 0,
+    images = document.querySelectorAll('.imagens_locais_venda img'),
+    max = images.length;
+
+
+function nextImage() {
+    images[currentImageIndex].classList.remove('selected');
+    currentImageIndex++;
+    if (currentImageIndex >= max)
+        currentImageIndex = 0;
+    images[currentImageIndex].classList.add('selected');
+}
+
+// vai ficar chamando a função nextImage
+function start() {
+    setInterval(() => {
+        nextImage()
+    }, time)
+}
+
+window.addEventListener('load', start)

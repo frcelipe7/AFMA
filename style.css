@@ -166,7 +166,49 @@ body::-webkit-scrollbar-thumb {
 }
 .section4 .texto_motivation .img_left .txt {padding-left: 25px;}
 
-.section5 .local_urbano .local_link img {width: 40px; transition: .6;}
+.section5 .local {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section5 .local .linha {
+    color: #d0ae6b;
+    background-color: #d0ae6b;
+    width: 5px;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px 0;
+}
+
+.imagens_locais_venda h3 {
+    margin-top: -440px;
+}
+
+.imagens_locais_venda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.imagens_locais_venda img{
+    width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1000ms;
+    z-index: 1;
+}
+
+.imagens_locais_venda .selected {
+    opacity: 1;
+}
+
+.local_urbano {width: 45%;}
+
 .section5 .local_urbano .local_link a {
     display: flex;
     flex-direction: row;
@@ -175,8 +217,9 @@ body::-webkit-scrollbar-thumb {
     margin-left: 0px;
     text-decoration: none;
 }
-.section5 .local_urbano .local_link a p:hover {color: #e0c389; background-color: #442f06;}
-.section5 .local_urbano .local_link a p {transition: .2s; background-color: #e0c389; border-radius: 20px; padding: 5px 10px; color: #442f06;}
+
+.local_urbano .local_link a p {transition: .2s; background-color: #e0c389; border-radius: 20px; padding: 5px 10px; color: #442f06;}
+.local_urbano .local_link a p:hover {color: #e0c389; background-color: #442f06;}
 
 
 @media (max-width: 750px) {
@@ -234,6 +277,13 @@ body::-webkit-scrollbar-thumb {
     .section4 .texto_motivation .img_right .txt {text-align: justify;}
     .section4 .texto_motivation .img_left,
     .section4 .texto_motivation .img_right {padding: 20px 10px;}
+    .section5 .local {display: flex; flex-direction: column;}
+    .local_urbano {width: 100%;}
+    .section5 .local .linha {display: none;}
+    .local .imagens_locais_venda {position: relative; height: 500px; width: 100%;}
+    .imagens_locais_venda h3 {
+        margin-top: -340px;
+    }
 }
 
 @media (max-width: 908px) {
