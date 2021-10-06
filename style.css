@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {padding: 0%; margin: 0%; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #5d4312;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #d0ae6b;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #d0ae6b;  /* creates padding around scroll thumb */
+}
+
+.bloco {
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    padding-top: 60px;
+}
+.section1 {
+    position: relative;
+    height: 100vh;
+}
+.section1 img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+.link_move_screen, .link {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 600px;
+    margin: 0.1px;
+    padding: 15px 5px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 7px;
+}
+.link {color: black;}
+.link:hover {
+    background-color: #d0ae6b;
+    color: #5d4312;
+}
+
+.link:hover{
+    color: #5d4312;
+    background-color: #e0c389;
+}
+.topo .menu {
+    position: absolute;
+    top: 260px;
+}
+.topo {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    position: absolute;
+    z-index: 10
+    ;
+}
+.topo .afma_logo {
+    text-align: center;
+}
+.topoFixo {
+    width: 100%;
+    height: 60px;
+    top: -69px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.section1 .topo .afma_logo {
+    display: flex;
+    flex-direction: row;
+}
+.menu_celular, .menu_celular_img, .menu_celular_cancelar {display: none;}
+
+#foto_abelha_topo {position: fixed;}
+#fundo_branco {background-color: #fff;}
+.logo {
+    cursor: pointer;
+    margin: 10px;
+}
+@keyframes mover{
+    0% {top: -69px;}
+    100% {top: 0%;}
+}
+@keyframes retornar{
+    0% {top: 0%;}
+    100% {top: -69px}
+}
+.topoFixo .all{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: #d0ae6b;
+    align-items: center;
+    border-radius: 60px;
+    padding: 30px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 4px #000000;
+    max-width: 90%;
+}
+.seta_div {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    z-index: 20;
+    background-color: #d0ae6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.seta_div img {
+    height: 40px;
+    width: 30px;
+    margin-top: -4px;
+    opacity: .8;
+    filter: grayscale(100%)
+}
+.section4 {height: 300%;}
+.section4 .texto_motivation .img_right
+{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    align-items: center;
+}
+.section4 .texto_motivation .img_right img, .section4 .texto_motivation .img_left img {width: 40%}
+
+.section4 .texto_motivation .img_left
+{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 30px;
+    align-items: center;
+}
+.section4 .texto_motivation .img_left .txt {padding-left: 25px;}
+
+.section5 .local_urbano .local_link img {width: 40px; transition: .6;}
+.section5 .local_urbano .local_link a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 220px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+.section5 .local_urbano .local_link a p:hover {color: #5d4312;}
+.section5 .local_urbano .local_link a p {transition: .2s;}
+
+
+@media (max-width: 750px) {
+    .bloco {text-align: justify;}
+    .bloco h1 {margin-bottom: 5px;}
+    .topoFixo {display: none;}
+    .section1 .topo .afma_logo .traco {display: none;}
+    .section1 .topo .afma_logo {display: flex; flex-direction: column;}
+    .section1 .topo .afma_logo .afma{font-size: 30pt;}
+    .section1 .topo .afma_logo .descricao {font-size: 15pt;}
+    .topo {height: 400px;}
+    .topo .afma_logo {margin-top: -200px;}
+    .topo .afma_logo .descricao{font-weight: 100;}
+    .topo .menu .link {font-size: 11pt; width: 160px; height: 50px; text-align: center; background-color: #5d4312; margin: 5px; color: white;}
+    .topo .menu {display: flex; flex-wrap: wrap; justify-content: center; top: 190px;}
+    .menu_celular {position: fixed; top: 0%; height: 100%; display: block;}
+    .menu_celular ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #d0ae6b;
+        padding: 10px;
+        padding-top: 2px;
+        height: 100%;
+        left: 360px;
+        margin-left: -360px;
+    }
+    .menu_celular ul li {
+        display: block;
+        margin-top: 15px;
+    }
+    @keyframes slideMenu {
+        0% {margin-left: -360px;}
+        100% {margin-left: 0px;}
+    }
+    @keyframes slideMenuReturn {
+        0% {margin-left: 0px;}
+        100% {margin-left: -360px;}
+    }
+    .menu_celular_img {position: fixed; top: 20px;left: 20px; display: block;}
+    .menu_celular_img img {height: 40px; width: 40px;}
+    .menu_celular_cancelar {position: fixed; top: 20px; margin-left: 200px;}
+    .menu_celular_cancelar img {height: 40px; width: 40px;}
+
+    .section4 .texto_motivation .img_left,
+    .section4 .texto_motivation .img_right {
+        display: flex;
+        flex-direction: column;
+    }
+    .section4 .texto_motivation .img_right img,
+    .section4 .texto_motivation .img_left img {width: 100%;}
+    .section4 .texto_motivation .img_left .txt {padding-left: 0px;}
+    .section4 .texto_motivation .img_left .txt,
+    .section4 .texto_motivation .img_right .txt {text-align: justify;}
+    .section4 .texto_motivation .img_left,
+    .section4 .texto_motivation .img_right {padding: 20px 10px;}
+}
+
+@media (max-width: 908px) {
+    .topoFixo .all .menu {font-size: 14px;}
+    .topoFixo .all .logo {display: none;}
+    .section1 .topo .afma_logo h1 {font-size: 20pt;}
+    .section5 .local_urbano iframe {width: 100%;}
+
+}
+
+.section6 {background-color: #5d4312;}
+.section6 h1 {color: #fff;}
+
+.developedBy {
+    background-color: #442f06;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.developedBy a {color: #d0ae6b;}
