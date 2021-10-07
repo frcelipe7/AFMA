@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     cursor: default;
     transition: 0.5s;
+    z-index: 10;
 }
 
 .section1 .topo .afma_logo {
@@ -121,6 +122,8 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5px;
     box-shadow: 2px 2px 4px #000000;
     max-width: 90%;
+    position: absolute;
+    z-index: 10;
 }
 .seta_div {
     width: 50px;
@@ -197,9 +200,9 @@ body::-webkit-scrollbar-thumb {
     width: 300px;
     max-height: 300px;
     object-fit: cover;
-    position: absolute;
     opacity: 0;
-    transition: opacity 1000ms;
+    transition: opacity 10ms;
+    position: absolute;
     z-index: 1;
 }
 
@@ -235,7 +238,7 @@ body::-webkit-scrollbar-thumb {
     .topo .afma_logo .descricao{font-weight: 100;}
     .topo .menu .link {font-size: 11pt; width: 160px; height: 50px; text-align: center; background-color: #5d4312; margin: 5px; color: white;}
     .topo .menu {display: flex; flex-wrap: wrap; justify-content: center; top: 190px;}
-    .menu_celular {position: fixed; top: 0%; height: 100%; display: block;}
+    .menu_celular {position: fixed; top: 0%; height: 100%; display: block; z-index: 10;}
     .menu_celular ul {
         list-style-type: none;
         margin: 0;
@@ -260,9 +263,9 @@ body::-webkit-scrollbar-thumb {
         0% {margin-left: 0px;}
         100% {margin-left: -360px;}
     }
-    .menu_celular_img {position: fixed; top: 20px;left: 20px; display: block;}
+    .menu_celular_img {position: fixed; top: 20px;left: 20px; display: block; z-index: 9;}
     .menu_celular_img img {height: 40px; width: 40px;}
-    .menu_celular_cancelar {position: fixed; top: 20px; margin-left: 200px;}
+    .menu_celular_cancelar {position: fixed; top: 20px; margin-left: 200px; z-index: 9;}
     .menu_celular_cancelar img {height: 40px; width: 40px;}
 
     .section4 .texto_motivation .img_left,
