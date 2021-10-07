@@ -312,7 +312,7 @@ body::-webkit-scrollbar-thumb {
 .section6 .contatos a:hover > .fundo_insta {background-color: #993399;}
 .section6 .contatos a:hover > .fundo_face {background-color: #3b5998;}
 .section6 .contatos p {margin-top: 7px; margin-left: 5px;}
-.telefone {display: flex; align-items: center;}
+.redes_sociais .telefone p {margin-top: 20px;}
 
 .fundo_face, .fundo_insta, .fundo_telefone {
     width: 40px;
