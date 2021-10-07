@@ -201,7 +201,7 @@ body::-webkit-scrollbar-thumb {
     max-height: 300px;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 10ms;
+    transition: opacity 2000ms;
     position: absolute;
     z-index: 1;
 }
@@ -221,7 +221,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
-.local_urbano .local_link a p {transition: .2s; background-color: #e0c389; border-radius: 20px; padding: 5px 10px; color: #442f06;}
+.local_urbano .local_link a p {margin-top: 20px; transition: .2s; background-color: #e0c389; border-radius: 20px; padding: 5px 10px; color: #442f06;}
 .local_urbano .local_link a p:hover {color: #e0c389; background-color: #442f06;}
 
 
@@ -330,4 +330,5 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     padding: 5px 0;
 }
+.developedBy p {margin-top: auto; margin-bottom: auto;}
 .developedBy a {color: #d0ae6b;}
