@@ -219,6 +219,46 @@ body::-webkit-scrollbar-thumb {
 .local_urbano .local_link a p {margin-top: 20px; transition: .2s; background-color: #e0c389; border-radius: 20px; padding: 5px 10px; color: #442f06;}
 .local_urbano .local_link a:hover > p {color: #e0c389; background-color: #442f06;}
 
+.section6 {background-color: #5d4312; padding-top: 20px;}
+.section6 h1 {color: #fff;}
+.section6 .contatos {
+    display: flex;
+    justify-content:left;
+    width: 300px;
+    align-items: center;
+    margin-top: 10px;
+}
+.section6 .contatos a, .telefone {display: flex; flex-direction: row; color: #cfb277; transition: .2s;}
+.section6 .contatos a:hover {color: #fff;}
+.section6 .contatos svg {height: 20px; width: 20px;}
+.section6 .contatos a:hover > .fundo_insta {background-color: #993399;}
+.section6 .contatos a:hover > .fundo_face {background-color: #3b5998;}
+.section6 .contatos a:hover > .fundo_whatsapp {background-color: #34af23;}
+
+.section6 .contatos p {margin-top: 7px; margin-left: 5px;}
+.section6 .telefone p {margin-top: 20px;}
+.section6 .chamada {color: rgba(199, 192, 192, 0.747);}
+
+.fundo_face, .fundo_insta, .fundo_telefone, .fundo_whatsapp {
+    width: 40px;
+    height: 40px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.developedBy {
+    background-color: #442f06;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.developedBy p {margin-top: auto; margin-bottom: auto;}
+.developedBy a {color: #d0ae6b;}
+
+
 
 @media (max-width: 750px) {
     .bloco {text-align: justify;}
@@ -291,39 +331,3 @@ body::-webkit-scrollbar-thumb {
     .section5 .local_urbano iframe {width: 100%;}
 
 }
-
-.section6 {background-color: #5d4312; padding-top: 20px;}
-.section6 h1 {color: #fff;}
-.section6 .contatos {
-    display: flex;
-    justify-content:left;
-    width: 300px;
-    align-items: center;
-    margin-top: 10px;
-}
-.section6 .contatos a, .telefone {display: flex; flex-direction: row; color: #cfb277; transition: .2s;}
-.section6 .contatos a:hover {color: #fff;}
-.section6 .contatos svg {height: 20px; width: 20px;}
-.section6 .contatos a:hover > .fundo_insta {background-color: #993399;}
-.section6 .contatos a:hover > .fundo_face {background-color: #3b5998;}
-.section6 .contatos p {margin-top: 7px; margin-left: 5px;}
-.redes_sociais .telefone p {margin-top: 20px;}
-
-.fundo_face, .fundo_insta, .fundo_telefone {
-    width: 40px;
-    height: 40px; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    transition: .2s;
-}
-
-.developedBy {
-    background-color: #442f06;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-}
-.developedBy p {margin-top: auto; margin-bottom: auto;}
-.developedBy a {color: #d0ae6b;}
