@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb {
 .local_urbano .local_link a p {margin-top: 20px; transition: .2s; background-color: #e0c389; border-radius: 20px; padding: 5px 10px; color: #442f06;}
 .local_urbano .local_link a:hover > p {color: #e0c389; background-color: #442f06;}
 
-.section6 {background-color: #5d4312; padding-top: 20px;}
+.section6 {background-color: #5d4312; padding-top: 20px; border-radius: 15px 15px 0 0;}
 .section6 h1 {color: #fff;}
 .section6 .contatos {
     display: flex;
@@ -254,6 +254,8 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     text-align: center;
     padding: 5px 0;
+    border-radius: 15px 15px 0 0;
+    margin-top: -20px;
 }
 .developedBy p {margin-top: auto; margin-bottom: auto;}
 .developedBy a {color: #d0ae6b;}
