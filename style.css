@@ -18,7 +18,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
     border: 3px solid #d0ae6b;
 }
-
+p {text-align: justify;}
 .bloco {
     height: auto;
     width: 100%;
@@ -162,7 +162,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 .section4 .texto_motivation .img_left .txt {padding-left: 25px;}
-
+.txt {padding-right: 25px;}
 .section5 .local {
     display: flex;
     flex-direction: row;

@@ -97,12 +97,13 @@ linksMenuMobile.forEach(link => {
 })
 
 //criando o efeito de trocar as imagens
-let time = 4000,
+  //definndo variaveis
+let time = 3000,
     currentImageIndex = 0,
     images = document.querySelectorAll('.imagens_locais_venda img'),
     max = images.length;
 
-
+    //criando a função
 function nextImage() {
     images[currentImageIndex].classList.remove('selected');
     currentImageIndex++;
@@ -111,7 +112,7 @@ function nextImage() {
     images[currentImageIndex].classList.add('selected');
 }
 
-// vai ficar chamando a função nextImage
+    // vai ficar chamando a função nextImage
 function start() {
     setInterval(() => {
         nextImage()
