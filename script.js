@@ -68,7 +68,7 @@ seta_div.addEventListener('click', function() {
 const menuMobileButton = document.querySelector('.menu_celular_img');
 menuMobileButton.addEventListener('click', function() {
     // Faz a animação de slide do menu mobile lateral
-    const menuMobile = document.querySelector('.menu_celular ul');
+    const menuMobile = document.querySelector('.menu_celular');
     menuMobile.style.animation = 'slideMenu .5s';
     menuMobile.style.animationFillMode = "forwards";
 
@@ -87,7 +87,7 @@ menuMobileButton.addEventListener('click', function() {
 const linksMenuMobile = document.querySelectorAll('.menu_celular ul li a');
 linksMenuMobile.forEach(link => {
     link.addEventListener('click', function(){
-        const menuMobile = document.querySelector('.menu_celular ul');
+        const menuMobile = document.querySelector('.menu_celular');
         const mobileButtonReturn = document.querySelector('.menu_celular_cancelar');
 
         menuMobile.style.animation = 'slideMenuReturn .5s';

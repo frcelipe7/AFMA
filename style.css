@@ -234,8 +234,8 @@ p {text-align: justify;}
 .section6 .contatos a:hover > .fundo_insta {background-color: #993399;}
 .section6 .contatos a:hover > .fundo_whatsapp {background-color: #34af23;}
 
-.section6 .contatos p {margin-top: 7px; margin-left: 5px;}
-.section6 .telefone p {margin-top: 20px;}
+.contatos p {margin-top: 7px; margin-left: 5px;}
+.telefone p {margin-top: 20px;}
 .section6 .chamada {color: rgba(199, 192, 192, 0.747);}
 
 .fundo_insta, .fundo_telefone, .fundo_whatsapp {
@@ -259,6 +259,18 @@ p {text-align: justify;}
     display: flex;
 }
 
+.redes_sociais_menu {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 350px;
+}
+.redes_sociais_menu .fundo_insta {background-color: #993399;}
+.redes_sociais_menu .fundo_whatsapp {background-color: #34af23;}
+.redes_sociais_menu .fundo_insta svg, .redes_sociais_menu .fundo_whatsapp svg {fill: #fff;}
+
 .developedBy a {color: #d0ae6b;}
 
 @media (max-width: 750px) {
@@ -274,7 +286,15 @@ p {text-align: justify;}
     .topo .afma_logo .descricao{font-weight: 100;}
     .topo .menu .link {font-size: 11pt; width: 160px; height: 50px; text-align: center; background-color: #5d4312; margin: 5px; color: white;}
     .topo .menu {display: flex; flex-wrap: wrap; justify-content: center; top: 190px;}
-    .menu_celular {position: fixed; top: 0%; height: 100%; display: block; z-index: 10;}
+    .menu_celular {
+        position: fixed; 
+        top: 0%; 
+        height: 100%; 
+        display: block; 
+        width: 200px;
+        margin-left: -360px;
+        z-index: 10;
+    }
     .menu_celular ul {
         list-style-type: none;
         margin: 0;
@@ -283,9 +303,7 @@ p {text-align: justify;}
         background-color: #d0ae6b;
         padding: 10px;
         padding-top: 2px;
-        height: 100%;
-        left: 360px;
-        margin-left: -360px;
+        height: 100%; 
     }
     .menu_celular ul li {
         display: block;
@@ -301,7 +319,7 @@ p {text-align: justify;}
     }
     .menu_celular_img {position: fixed; top: 20px;left: 20px; display: block; z-index: 9;}
     .menu_celular_img svg {height: 40px; width: 40px;}
-    .menu_celular_cancelar {position: fixed; top: 20px; margin-left: 200px; z-index: 9;}
+    .menu_celular_cancelar {position: fixed; top: 15px; margin-left: 215px; z-index: 9;}
     .menu_celular_cancelar svg {height: 40px; width: 40px; cursor: pointer;}
 
     .section4 .texto_motivation .img_left,
