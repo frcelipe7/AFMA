@@ -325,7 +325,9 @@ body::-webkit-scrollbar-thumb {
     }
     .section6 .contatos .fundo_insta {background-color: #993399;}
     .section6 .contatos .fundo_whatsapp {background-color: #34af23;}
+    .section6 .contatos a p {color: #fff;}
     .section6 .contatos .fundo_insta svg, .section6 .contatos .fundo_whatsapp svg {fill: #fff;}
+    .seta_div {margin-right: 20px;}
 }
 
 @media (max-width: 908px) {
