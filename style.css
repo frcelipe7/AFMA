@@ -232,14 +232,13 @@ body::-webkit-scrollbar-thumb {
 .section6 .contatos a:hover {color: #fff;}
 .section6 .contatos svg {height: 20px; width: 20px;}
 .section6 .contatos a:hover > .fundo_insta {background-color: #993399;}
-.section6 .contatos a:hover > .fundo_face {background-color: #3b5998;}
 .section6 .contatos a:hover > .fundo_whatsapp {background-color: #34af23;}
 
 .section6 .contatos p {margin-top: 7px; margin-left: 5px;}
 .section6 .telefone p {margin-top: 20px;}
 .section6 .chamada {color: rgba(199, 192, 192, 0.747);}
 
-.fundo_face, .fundo_insta, .fundo_telefone, .fundo_whatsapp {
+.fundo_insta, .fundo_telefone, .fundo_whatsapp {
     width: 40px;
     height: 40px; 
     display: flex; 
@@ -324,6 +323,9 @@ body::-webkit-scrollbar-thumb {
     .imagens_locais_venda h3 {
         margin-top: -340px;
     }
+    .section6 .contatos .fundo_insta {background-color: #993399;}
+    .section6 .contatos .fundo_whatsapp {background-color: #34af23;}
+    .section6 .contatos .fundo_insta svg, .section6 .contatos .fundo_whatsapp svg {fill: #fff;}
 }
 
 @media (max-width: 908px) {
