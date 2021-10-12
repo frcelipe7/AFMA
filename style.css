@@ -1,10 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
+#loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #d0ae6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todaATela{
+    display: none;
+}
+
+#loader.hidden {
+    animation: tirarPreLoad 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tirarPreLoad{
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 * {padding: 0%; margin: 0%; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
 html {
     scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
-
 body::-webkit-scrollbar {
     width: 10px;
 }

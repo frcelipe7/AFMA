@@ -120,3 +120,11 @@ function start() {
 }
 
 window.addEventListener('load', start)
+
+window.addEventListener("load", function() {
+    const loader = document.querySelector('#loader');
+    const todaATela = document.querySelector('.todaATela');
+
+    loader.className += " hidden";
+    todaATela.style.display = 'block';
+})
