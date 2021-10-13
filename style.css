@@ -278,16 +278,7 @@ p {text-align: justify;}
     transition: .2s;
 }
 
-.developedBy {
-    background-color: #442f06;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 15px 15px 0 0;
-    margin-top: -20px;
-    justify-content: center;
-    display: flex;
-}
+
 
 .redes_sociais_menu {
     width: 55%;
@@ -301,7 +292,19 @@ p {text-align: justify;}
 .redes_sociais_menu .fundo_whatsapp {background-color: #34af23;}
 .redes_sociais_menu .fundo_insta svg, .redes_sociais_menu .fundo_whatsapp svg {fill: #fff;}
 
+.developedBy {
+    background-color: #442f06;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 15px 15px 0 0;
+    margin-top: -20px;
+    justify-content: center;
+    display: flex;
+}
 .developedBy a {color: #d0ae6b;}
+.developedBy p {margin: 0;}
+
 
 @media (max-width: 750px) {
     .bloco {text-align: justify;}
@@ -364,6 +367,7 @@ p {text-align: justify;}
     .section4 .texto_motivation .img_left .txt {padding-left: 0px;}
     .section4 .texto_motivation .img_left .txt,
     .section4 .texto_motivation .img_right .txt {text-align: justify;}
+    .txt {padding-right: 0px;}
     .section4 .texto_motivation .img_left,
     .section4 .texto_motivation .img_right {padding: 20px 10px;}
     .section5 .local {display: flex; flex-direction: column;}
